@@ -274,6 +274,9 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: blackhole; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.blackhole VALUES (1, NULL, 1, 1, true, NULL);
+INSERT INTO public.blackhole VALUES (2, NULL, 2, 1, false, NULL);
+INSERT INTO public.blackhole VALUES (3, NULL, 3, 4, false, NULL);
 
 
 --
@@ -293,6 +296,26 @@ INSERT INTO public.galaxy VALUES (7, 'galaxy7', NULL, NULL, NULL, NULL);
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.moon VALUES (1, NULL, 'a', true, 1);
+INSERT INTO public.moon VALUES (2, NULL, 'ad', true, 1);
+INSERT INTO public.moon VALUES (3, NULL, 'aaad', true, 1);
+INSERT INTO public.moon VALUES (4, NULL, 'ffad', true, 1);
+INSERT INTO public.moon VALUES (5, NULL, 'gad', true, 1);
+INSERT INTO public.moon VALUES (6, NULL, 'awwd', true, 1);
+INSERT INTO public.moon VALUES (7, NULL, 'awd', true, 1);
+INSERT INTO public.moon VALUES (8, NULL, 'ead', true, 1);
+INSERT INTO public.moon VALUES (9, NULL, 'agd', true, 1);
+INSERT INTO public.moon VALUES (10, NULL, 'afd', true, 1);
+INSERT INTO public.moon VALUES (11, NULL, 'dad', true, 1);
+INSERT INTO public.moon VALUES (12, NULL, 'aatttad', true, 1);
+INSERT INTO public.moon VALUES (13, NULL, 'ffadaaaa', true, 1);
+INSERT INTO public.moon VALUES (14, NULL, 'gxxxxad', true, 1);
+INSERT INTO public.moon VALUES (15, NULL, 'awxxwd', true, 1);
+INSERT INTO public.moon VALUES (16, NULL, 'aggwd', true, 1);
+INSERT INTO public.moon VALUES (17, NULL, 'eawwd', true, 1);
+INSERT INTO public.moon VALUES (18, NULL, 'agaad', true, 1);
+INSERT INTO public.moon VALUES (19, NULL, 'afffd', true, 1);
+INSERT INTO public.moon VALUES (20, NULL, 'dafd', true, 1);
 
 
 --
@@ -330,7 +353,7 @@ INSERT INTO public.star VALUES (7, 7, NULL, NULL, NULL, 7, 'star7');
 -- Name: blackhole_blackhole_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.blackhole_blackhole_id_seq', 1, false);
+SELECT pg_catalog.setval('public.blackhole_blackhole_id_seq', 3, true);
 
 
 --
@@ -344,7 +367,7 @@ SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 7, true);
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, false);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 20, true);
 
 
 --

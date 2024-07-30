@@ -137,3 +137,5 @@ add .
 git add .
 git commit -m"celestial bodies"
 git push myorigin main
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+git add .
