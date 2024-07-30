@@ -299,6 +299,18 @@ INSERT INTO public.galaxy VALUES (7, 'galaxy7', NULL, NULL, NULL, NULL);
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.planet VALUES (1, 'planet', NULL, 1, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (2, 'planet', NULL, 2, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (3, 'planet', NULL, 3, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (4, 'planet', NULL, 4, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (5, 'planet', NULL, 5, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (6, 'planet', NULL, 6, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (7, 'planet', NULL, 7, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (8, 'planet', NULL, 8, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (9, 'planet', NULL, 9, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (10, 'planet', NULL, 10, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (11, 'planet', NULL, 11, NULL, NULL, 1, true);
+INSERT INTO public.planet VALUES (12, 'planet', NULL, 12, NULL, NULL, 1, true);
 
 
 --
@@ -339,7 +351,7 @@ SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, false);
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 1, false);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 12, true);
 
 
 --
